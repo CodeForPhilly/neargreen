@@ -1,0 +1,19 @@
+{
+  "name": "neargreen",
+  "authors": [
+    "Brad Steinberg <steinbergbrad@gmail.com>"
+  ],
+  "description": "",
+  "main": "'",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/static/vendor",
+    "test",
+    "tests"
+  ]
+}
