@@ -16,7 +16,8 @@
     - Bower is a developer tool that installs and manages front-end, 3rd party libraries
     - It alleviates having to go directly to a site like jQuery.com, downloading the zipped or tarballed source files, and then extracting those files into your project.
 - Setup and leveraging Bower for NearGreen
-    - All you need to do, once you fork this repository is
+    - [Install Bower](https://bower.io/)
+    - Then all you need to do, once you fork this repository is
         - Make sure you are in the root of your project folder - *../[your_github_username]/neargreen*
         - Type the following line into the terminal: *bower install*
             - This will install jQuery, jQuery-UI, and Bootstrap into *../[github_username]/neargreen/app/static/vendor*
