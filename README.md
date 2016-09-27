@@ -27,7 +27,7 @@
 - Ummm, so what is *forking*? What about a *pull request*?
     - Forking is taking a base of hosted source code and copying it, to add features, enhancements, and bug fixes.
     - A pull request (often abbreviated as PR) is the mechanism we use in version controlled software, to ask for something we've changed to be added to the main repository.
-    - This [article]([http://www.codenewbie.org/blogs/how-to-make-a-pull-request]) explains how to fork a repository and create a PR.
+    - This [article](http://www.codenewbie.org/blogs/how-to-make-a-pull-request) explains how to fork a repository and create a PR.
 
 
 
