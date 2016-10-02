@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <!-- Bootstrap CDN -->
+  <link href="app/static/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="app/static/vendor/font-awesome/css/font-awesome.min.css">
+
+
+  <style>
+    body {
+      background-color: #D7F0CF;
+    }
+    
+    .navbar-default {
+      max-height: 40px;
+      background-color: #D7F0CF !important;
+      border-color: #D7F0CF;
+      color: #3A4036;
+    }
+    
+    .navbar-right {
+      float: right;
+    }
+    
+    .navbar-default .navbar-brand {
+      color: #3A4036 !important;
+    }
+    
+    .navbar-default .navbar-nav>li>a {
+      color: #3A4036 !important;
+    }
+    
+    .col-xs-6 {
+      float: none !important;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .center-block {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 200px;
+      margin-bottom: 20px;
+    }
+    
+    .btn-group-wrap {
+      text-align: center;
+      margin-top: 30px;
+    }
+    
+    div.btn-group {
+      margin: 0 auto;
+      text-align: center;
+      width: inherit;
+      display: inline-block;
+      padding-right: 5px;
+      padding-left: 5px;
+    }
+    
+    .btn-primary {
+      color: #ecf0f1 !important;
+      background-color: #2980b9 !important;
+      border-color: #2980b9 !important;
+    }
+
+    .btn-social-media {
+      	background: #9A9B9D;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 25px;
+        text-align: center;
+        margin-right: 10px;
+        padding-top: 15%;
+    }
+
+    .text-center {
+      text-align: center;
+      font-size: 40px;
+    }
+  </style>
+
+</head>
+
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Browse Map</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="span4"></div>
+      <div class="span4">
+        <p class="center-block text-center">NearGreen.</p>
+      </div>
+      <div class="span4"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Enter your street address">
+          <span class="input-group-btn">
+                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="btn-group-wrap">
+      <strong>Share</strong>
+    </div>
+
+    <div class="btn-group-wrap">
+        <div class="btn-group">
+            <i class="fa fa-facebook btn-social-media " aria-hidden="true"></i>
+        </div>
+        <div class="btn-group">
+            <i class="fa fa-twitter btn-social-media " aria-hidden="true"></i>
+        </div>
+
+        <div class="btn-group">
+            <i class="fa fa-instagram btn-social-media " aria-hidden="true"></i>
+        </div>
+
+        <div class="btn-group">
+            <i class="fa fa-github btn-social-media " aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="btn-group-wrap">
+      <div class="btn-group">
+        <p>© 2016 - A <a href="https://codeforphilly.org/">Code for Philly</a> Project</p>
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,11 +1,15 @@
-(function() {
-    "use strict";
-
-    var map = new google.maps.Map($('#map')[0], {
-	    center: {
+var map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+    center: {
             lat: 39.9522, 
             lng: -75.1635
         },
-	    zoom: 16
+        zoom: 16,
+        draggable: true
     });
-})(window, document, google);
+}
+
+$(function() {
+    initMap();
+});
