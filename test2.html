@@ -86,6 +86,10 @@
     }
   </style>
 
+  <script type="text/javascript" src="app/static/vendor/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="app/static/js/main.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQMPJvw3t_Y8Tws2x1Y7S1qrsHt9YTZDQ"></script>
+
 </head>
 
 
@@ -121,9 +125,9 @@
     <div class="row">
       <div class="col-xs-6">
         <div class="input-group">
-          <input type="text" class="form-control" placeholder="Enter your street address">
+          <input id="tbAddress" type="text" class="form-control" placeholder="Enter your street address">
           <span class="input-group-btn">
-                  <button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
+                  <button id="btnSearch" class="btn btn-primary" type="button"><i class="fa fa-search"></i></button>
                 </span>
         </div>
       </div>

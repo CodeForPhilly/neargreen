@@ -1,0 +1,30 @@
+{
+  "name": "neargreen",
+  "version": "1.0.0",
+  "description": "--- ### Thank you for your interest in this project. We always are looking for contributions so please feel free to submit pull requests and create issues. ---",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.17.2",
+    "connect": "^3.5.0",
+    "gulp": "^3.9.1",
+    "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.2",
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csharpie/neargreen.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/csharpie/neargreen/issues"
+  },
+  "homepage": "https://github.com/csharpie/neargreen#readme"
+}
