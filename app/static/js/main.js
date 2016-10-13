@@ -1,8 +1,4 @@
 $(function() {
-	$("#btnClickMe").on("click", function() {
-		alert("You've clicked me!");
-	});
-
 	$("#btnSearch").on("click", function() {
 		var geocoder = new google.maps.Geocoder();
 
