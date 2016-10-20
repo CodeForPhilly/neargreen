@@ -6763,3 +6763,12 @@ button.close {
   border-radius: 5px !important;
 }
 
+.deadCenter {
+  position: absolute !important;
+   left: 50% !important;
+   top: 50% !important;
+   width: 300px !important;
+   height: 100px !important;
+   margin-top: -50px !important; /* Half of total height */
+   margin-left: -150px !important; /* Half of total width */
+}
