@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html>
-<body>
-
-<h1>My First Google Map</h1>
-
-<div id="map" style="width:100%;height:500px"></div>
-
-<script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
-    center: new google.maps.LatLng(51.508742,-0.120850),
-    zoom: 5
-  };
-var map = new google.maps.Map(mapCanvas, mapOptions);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-
-</body>
+    <title>Near Green.</title>
+    <head>
+        <script type="text/javascript" src="app/static/vendor/knockout/dist/knockout.js"></script>
+        <script type="text/javascript" src="app/static/vendor/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="app/static/js/map.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQMPJvw3t_Y8Tws2x1Y7S1qrsHt9YTZDQ"></script>
+        <link rel="stylesheet" type="text/css" href="app/static/vendor/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="app/static/vendor/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="app/static/css/main.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="span4"></div>
+                <div class="span4">
+                    <p class="center-block text-center"><a href="index.html">NearGreen.</a></p>
+                </div>
+                <div class="span4"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-bind="foreach: stores">
+                            <div class="row store-row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                                    <div class="panel panel-primary">
+                                        <div class="row padall" data-bind="attr: {'data-lat': latlng[0], 'data-lng': latlng[1]}">
+                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                                                <span></span>
+                                                <i class="fa fa-cutlery map-store-icon"></i>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                                <div class="clearfix">
+                                                    <h4>
+                                                    <span data-bind="text: name"></span>
+                                                    </h4>
+                                                </div>
+                                                <div>
+                                                    <h5>
+                                                    <span data-bind="text: address1"></span>
+                                                    <br>
+                                                    <span data-bind="text: city"></span>
+                                                    <span data-bind="text: state"></span>
+                                                    <span data-bind="text: zipCode"></span>
+                                                    <br>
+                                                    <span data-bind="text: telephoneNumber"></span>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div id="map">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-group-wrap">
+            <div class="btn-group">
+                <p>© 2016 - A <a href="https://codeforphilly.org/">Code for Philly</a> Project</p>
+            </div>
+        </div>
+    </body>
 </html>
