@@ -1,74 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <title>Near Green.</title>
-    <head>
-        <script type="text/javascript" src="app/static/vendor/knockout/dist/knockout.js"></script>
-        <script type="text/javascript" src="app/static/vendor/jquery/dist/jquery.min.js"></script>
-        <script type="text/javascript" src="app/static/js/map.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQMPJvw3t_Y8Tws2x1Y7S1qrsHt9YTZDQ"></script>
-        <link rel="stylesheet" type="text/css" href="app/static/vendor/bootstrap/dist/css/bootstrap.min.css">
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="app/static/vendor/font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="app/static/css/main.css">
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="span4"></div>
-                <div class="span4">
-                    <p class="center-block text-center"><a href="index.html">NearGreen.</a></p>
-                </div>
-                <div class="span4"></div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" data-bind="foreach: stores">
-                            <div class="row store-row">
-                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-                                    <div class="panel panel-primary">
-                                        <div class="row padall" data-bind="attr: {'data-lat': latlng[0], 'data-lng': latlng[1]}">
-                                            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                                                <span></span>
-                                                <i class="fa fa-cutlery map-store-icon"></i>
-                                            </div>
-                                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                                <div class="clearfix">
-                                                    <h4>
-                                                    <span data-bind="text: name"></span>
-                                                    </h4>
-                                                </div>
-                                                <div>
-                                                    <h5>
-                                                    <span data-bind="text: address1"></span>
-                                                    <br>
-                                                    <span data-bind="text: city"></span>
-                                                    <span data-bind="text: state"></span>
-                                                    <span data-bind="text: zipCode"></span>
-                                                    <br>
-                                                    <span data-bind="text: telephoneNumber"></span>
-                                                    </h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div id="map">
-                                </div>
-                            </div>
-                        </div>
+  <title>Near Green Map.</title>
+  <head>
+    <script type="text/javascript" src="app/static/vendor/knockout/dist/knockout.js"></script>
+    <script type="text/javascript" src="app/static/vendor/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="app/static/js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQMPJvw3t_Y8Tws2x1Y7S1qrsHt9YTZDQ"></script>
+    <link rel="stylesheet" type="text/css" href="app/static/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="app/static/vendor/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="app/static/css/main.css">
+  </head>
+<body>
+  <div class="container-fluid">
+    <div class="text-center">
+      <!--header-->
+      <div class="row">
+        <div class="col-md-12">
+          <h2>NearGreen.</h2>
+        </div>
+      </div>
+      <!--end header-->
+      <!--results container-->
+      <div class="results-container">
+        <div class="row">
+          <div class="col-md-2 col-lg-offset-0" data-bind="foreach: stores">
+            <div class="row store-row">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="panel panel-primary">
+                   <div class="row padall" data-bind="attr: {'data-lat': latlng[0], 'data-lng': latlng[1]}">
+                     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                        <span></span>
+                        <i class="fa fa-cutlery map-store-icon"></i>
                     </div>
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                      <div>
+                        <h4>
+                          <span data-bind="text: name"></span>
+                        </h4>
+                        <h5>
+                        <a href="#" alt="Get Directions">
+                          <span data-bind="text: address1"></span>
+                          <br>
+                          <span data-bind="text: city"></span>
+                          <span data-bind="text: state"></span>
+                          <span data-bind="text: zipCode"></span>
+                          <br>
+                          <span data-bind="text: telephoneNumber"></span>
+                        </a>
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="btn-group-wrap">
-            <div class="btn-group">
-                <p>© 2016 - A <a href="https://codeforphilly.org/">Code for Philly</a> Project</p>
-            </div>
+      </div>
+      <!--end results container-->
+      <!--map container-->
+      <div class="map-container">
+        <div class="col-lg-6 col-lg-offset-5">
+          <div id="map"></div>
         </div>
-    </body>
+      </div>
+      <!--end map container-->
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <form action="map.html" method="get">
+            <label id="search-again">Search for another location:</label>
+            <input class="inputForm" type="text" name="destination" placeholder="123 Healthy Street"/>
+            <!--
+            <button type="button" class="btn btn-default">
+              <span class="glyphicon glyphicon-search">Search</span>
+            </button>
+            -->
+          </form>
+        </div>
+      </div>
+      <!--End search box row-->
+    </div>
+  </div>
+</body>
 </html>
