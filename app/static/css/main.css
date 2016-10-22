@@ -3,6 +3,11 @@ body {
     color: #3A4036;
 }
 
+h1{
+  font-size:70px;
+  margin-bottom:25px;
+}
+
 .social {
     color: #9A9B9D;
 }
@@ -61,7 +66,7 @@ div.btn-group {
 }
 
 .btn-social-media {
-  	background: #9A9B9D;
+  	background: #;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -83,11 +88,95 @@ div.btn-group {
   
 }
 
- #map {
-      min-width: 300px;
-      min-height: 470px;
-    }
+#map {
+  min-width: 400px;
+  min-height: 470px;
+}
 
 .map-store-icon {
   font-size: 50px;
+}
+
+#browse-map{
+  font-size:18px;
+  font-weight:200;
+  margin-top:50px;
+}
+
+#browse-map a{
+  text-decoration: underline;
+  color:#000;
+}
+
+#browse-map a:hover{
+  font-weight:bold;
+}
+
+#intro-text{
+  font-size:24px;
+  line-height:38px;
+  text-align:center;
+}
+
+#share a{
+  font-size:24px;
+  text-align:center;
+  text-decoration:none;
+  color:#000;
+  font-weight:bold;
+}
+
+#share a:hover{
+  text-decoration: underline;
+}
+
+.social-media{
+  text-align:center;
+  margin-left:50px;
+  margin-right:50px;
+}
+
+#facebook{
+  background-image: url("/images/fb-logo.png");
+  width:75px;
+  height:75px;
+  text-align: center;
+  margin-left:50px;
+  margin-right:25px;
+}
+#twitter{
+  background-image: url("/images/twitter-logo.png");
+  width:75px;
+  height:75px;
+  margin-left:50px;
+  margin-right:25px;
+}
+#instagram{
+  background-image: url("/images/insta-logo.png");
+  width:75px;
+  height:75px;
+  margin-left:50px;
+  margin-right:25px;
+}
+#github{
+  background-image: url("/images/github-logo.png");
+  width:75px;
+  height:75px;
+  margin-left:50px;
+  margin-right:25px;
+}
+
+#code-philly{
+  font-size:14px;
+  margin-top:100px;
+  color:#000;
+}
+
+#code-philly a{
+  text-decoration:none;
+  color:#000;
+}
+
+#code-philly a:hover{
+  text-decoration: underline;
 }
