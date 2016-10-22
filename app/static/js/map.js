@@ -73,8 +73,15 @@ $(function() {
 
 	$(".store-row").click(function() {
 		var that = this;
+		//remove active state class to previous elements
+		$(".store-row").find(".panel-primary").removeClass("active");
 		var lat = $($(that).find("[data-lat]")[0]).attr("data-lat");
 		var lng = $($(that).find("[data-lat]")[0]).attr("data-lng");
+
+		//highlight what store has  been selected
+		var panel = $(this).find(".panel-primary");
+		$(panel).addClass("active");
+
 		initMap(lat, lng);
 	});
 
