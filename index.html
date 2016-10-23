@@ -2,48 +2,82 @@
 <html>
 	<head>
 		<title>Near Green</title>	
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="app/static/css/main.css">
 	</head>
 	<body>
 		<div class="text-center">
-			<div class="container deadCenter">
-			    <div class="row">
-		        	<h1 style="font-size: 54px; margin-bottom: 25px">Near Green.</h1>
-					<input class ="inputDesto" type="text" name="destination" placeholder="123 Healthy Street"/>
-					<button type="button" class="btn btn-default">
-				     <span class="glyphicon glyphicon-search"></span> Search
-				    </button>
-				    	<div class="row">
-				    		<div class="col-md-12">
-				    		<p>Philadelphia, find healthy fresh food near you. Based on the Walkable Corner Stores Project, and brought to you by Code for Philly.</p>
-				    		</div>
-					    <!--end col-md-12-->
-				   		</div>
-				   		<!--end row-->
-				 </div>
-					<!--end row-->
-					<div class="container" style="padding-top: 49px; margin-left: -450px">
-					<div class="row">
-						<div class="col-sm-3">
-							<img src="images/fb-logo.png">
-						</div>
-						<div class="col-sm-3">
-							<img src="images/twitter-logo.png">
-						</div>
-						<div class="col-sm-3">
-							<img src="images/insta-logo.png">
-						</div>
-						<div class="col-sm-3">
-							<img src="images/github-logo.png">
-						</div>
-					</div>
-					</div>
-
-			</div>
-			   <!--end container deadCenter-->
-		</div>
-			
-		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	</body>
+			<div class="container-fluid">
+        <!--Browse map-->
+        <div class="row">
+          <div class="col-sm-2 col-sm-offset-10">
+            <p id="browse-map"><a href="/map.html">Browse map</a></p>
+          </div>
+        </div>
+        <!--end browse map-->
+        <h1>NearGreen.</h1>
+        <!--Search Box row-->
+        <div class="row">
+          <div class="col-md-12">
+            <form action="map.html" method="get">
+              <input class="inputForm" type="text" name="destination" placeholder="123 Healthy Street"/>
+              <!--
+              <button type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-search">Search</span>
+              </button>
+              -->
+            </form>
+          </div>
+        </div>
+        <!--End search box row-->
+        <!--Intro text row-->
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <p id="intro-text">
+              Hey Philadelphia, find healthy fresh food near you. Based on the Walkable Corner Stores Project, and brought to you by Code for Philly.
+            </p>
+          </div>
+        </div>
+        <!--End intro text row-->
+        <!--Share row-->
+        <div class="row">
+          <div class="col-md-12">
+            <p id="share">
+              <a href="#">Share</a>
+            </p>
+          </div>
+        </div>
+        <!--end share row-->
+        <!--social media-->
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="social-media">
+              <div class="col-sm-3">
+                <a href="#"><div id="facebook"></div></a>
+              </div>
+              <div class="col-sm-3">
+                <a href="#"><div id="twitter"></div></a>
+              </div>
+              <div class="col-sm-3">
+                <a href="#"><div id="instagram"></div></a>
+              </div>
+              <div class="col-sm-3">
+                <a href="https://github.com/CodeForPhilly/neargreen" target="_blank"><div id="github"></div></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end social media-->
+        <!--code philly block-->
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <p id="code-philly"><a href="https://codeforphilly.org/">© 2016&mdash;A Code for Philly Project</a></p>
+          </div>
+        </div>
+        <!--end code philly-->
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </html>
