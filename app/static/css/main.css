@@ -140,7 +140,7 @@ css for the homepage
   height:30px;
   padding:20px 10px 20px 10px;
   margin-bottom:25px;
-  background-image: url("/images/search-icon.png");
+  background-image: url("../../../images/search-icon.png");
   background-size: 9% 75%;
   background-repeat: no-repeat;
   background-position: 98% 40%;
@@ -173,7 +173,7 @@ css for the homepage
 }
 
 #facebook{
-  background-image: url("/images/fb-logo.png");
+  background-image: url("../../../images/fb-logo.png");
   width:75px;
   height:75px;
   text-align: center;
@@ -182,7 +182,7 @@ css for the homepage
 }
 
 #facebook:hover{
-  background-image: url("/images/facebook_dark.png");
+  background-image: url("../../../images/facebook_dark.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -190,7 +190,7 @@ css for the homepage
 }
 
 #twitter{
-  background-image: url("/images/twitter-logo.png");
+  background-image: url("../../../images/twitter-logo.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -198,7 +198,7 @@ css for the homepage
 }
 
 #twitter:hover{
-  background-image: url("/images/twitter_dark.png");
+  background-image: url("../../../images/twitter_dark.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -206,7 +206,7 @@ css for the homepage
 }
 
 #instagram{
-  background-image: url("/images/insta-logo.png");
+  background-image: url("../../../images/insta-logo.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -214,7 +214,7 @@ css for the homepage
 }
 
 #instagram:hover{
-  background-image: url("/images/instagram_dark.png");
+  background-image: url("../../../images/instagram_dark.png");
   width:70px;
   height:75px;
   margin-left:50px;
@@ -222,7 +222,7 @@ css for the homepage
 }
 
 #github{
-  background-image: url("/images/github-logo.png");
+  background-image: url("../../../images/github-logo.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -230,7 +230,7 @@ css for the homepage
 }
 
 #github:hover{
-  background-image: url("/images/github_dark.png");
+  background-image: url("../../../images/github_dark.png");
   width:75px;
   height:75px;
   margin-left:50px;
