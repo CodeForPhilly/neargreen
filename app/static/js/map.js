@@ -23,27 +23,29 @@ $(function() {
 				'address': address,
 			},	function (results, status) {
 				if (status === "OK") {
-					startLat = results[0].geometry.location[0];
-					startLng = results[0].geometry.location[1];
+					startLat = results[0].geometry.location.lat();
+					startLng = results[0].geometry.location.lng();
 				}
+
+				var pt = {
+					"type": "Feature",
+					"properties": {},
+					"geometry": {
+						"type": "Point",
+						"coordinates": [Number(startLng), Number(startLat)]
+					}
+				};
+
+				var stores = findClosestStores(pt);
+
+				if (stores.length > 0)
+					ko.applyBindings(new HealthyStoresViewModel(stores));
+
+				initMap(startLat, startLng);
 			});
 		}
 
 		codeAddress();
-
-		var pt = {
-			"type": "Feature",
-			"properties": {},
-			"geometry": {
-				"type": "Point",
-				"coordinates": [Number(lng), Number(lat)]
-			}
-		};
-
-		var stores = FindClosestStores(pt);
-
-		if (stores.length > 0)
-			ko.applyBindings(new HealthyStoresViewModel(stores));
 	}
 
 	function initMap(lat, lng) {
@@ -82,7 +84,7 @@ $(function() {
 
 	}
 
-	function FindClosestStores(pt) {
+	function findClosestStores(pt) {
 		var stores = [];
 
 		var unit = 'miles';
@@ -127,5 +129,5 @@ $(function() {
 	}
 
 	onLoad();
-	initMap(startLat, startLng);
+	
 });
