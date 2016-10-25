@@ -3,10 +3,12 @@ body {
     color: #3A4036;
 }
 
-h1{
-  font-size:100px;
+#neargreenLogo {
+  width: 322px;
+  height: 210px;
   margin-bottom:0px;
 }
+
 h2{
   font-size:50px;
 }
@@ -271,10 +273,22 @@ CSS for map page
 }
 
 .map-container{
-  position:relative;
-  margin-left:auto;
+  /*position:relative;*/
+  margin-left:24px;
   margin-right:auto;
   margin-top:-600px;
+}
+
+.map-logo {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  margin-left: 50px;
+}
+
+#nearGreen-map-logo {
+  width: 120.75px;
+  height: 78.75px;
 }
 
 .results-container{
@@ -282,7 +296,13 @@ CSS for map page
   overflow:hidden;
   border:none;
   width:300px;
-  margin-left:310px;
+  height: 600px;
+  margin-left:317px;
+}
+
+.results-container-scrollable {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .panel{

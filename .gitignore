@@ -1,3 +1,7 @@
 app/static/vendor
 node_modules
 config.json
+
+# But not these files
+app/static/vendor/turf
+app/static/vendor/turf/turf.min.js
