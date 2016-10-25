@@ -261,6 +261,21 @@ End CSS for the homepage
 CSS for map page
 */
 
+#back-home{
+  font-size:18px;
+  font-weight:200;
+  margin-top:50px;
+}
+
+#back-home a{
+  text-decoration: underline;
+  color:#000;
+}
+
+#back-home a:hover{
+  font-weight:bold;
+}
+
 #map {
   min-width: 200px;
   min-height: 600px;
