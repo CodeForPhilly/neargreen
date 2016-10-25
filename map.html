@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>Near Green Map.</title>
+  <title>NearGreen</title>
   <head>
     <script type="text/javascript" src="app/static/vendor/knockout/dist/knockout.js"></script>
     <script type="text/javascript" src="app/static/vendor/jquery/dist/jquery.min.js"></script>
@@ -16,11 +16,7 @@
   <div class="container-fluid">
     <div class="text-center">
       <!--header-->
-      <div class="row">
-        <div class="col-md-12">
-          <h2>NearGreen.</h2>
-        </div>
-      </div>
+      <br />
       <!--end header-->
       <!--results container-->
       <div class="results-container">
@@ -36,9 +32,13 @@
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
                       <div>
-                        <h4>
-                          <span data-bind="text: name"></span>
-                        </h4>
+                        <h5>
+                          <strong>
+                            <em>
+                              <span data-bind="text: name"></span>
+                            </em>
+                          </strong>
+                        </h5>
                         <h5>
                         <a href="#" alt="Get Directions">
                           <span data-bind="text: address1"></span>
@@ -64,6 +64,7 @@
       <div class="map-container">
         <div class="col-lg-6 col-lg-offset-5">
           <div id="map"></div>
+          <img id="nearGreen-map-logo" class="map-logo" src="images/neargreenlogo.png" alt="NearGreen" />
         </div>
       </div>
       <!--end map container-->
