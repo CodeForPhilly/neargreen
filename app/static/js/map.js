@@ -137,7 +137,7 @@ $(function() {
 			map: map,
 			title: name,
 			icon: {
-				url: 'neargreen/images/leaf.png',
+				url: 'images/leaf.png',
 				scaledSize: new google.maps.Size(35.5, 52.25), // scaled size
 			    origin: new google.maps.Point(0,0), // origin
 			    anchor: new google.maps.Point(0, 0) // anchor
