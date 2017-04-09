@@ -1,5 +1,5 @@
 body {
-    background-color: #D7F0CF;
+    background-color: #d4f2cd;
     color: #3A4036;
 }
 
@@ -96,7 +96,6 @@ div.btn-group {
 }
 
 .btn-social-media {
-  	background: #;
     color: #fff;
     width: 40px;
     height: 40px;
@@ -175,7 +174,7 @@ css for the homepage
 }
 
 #facebook{
-  background-image: url("../../../images/fb-logo.png");
+  background-image: url("../images/fb-logo.png");
   width:75px;
   height:75px;
   text-align: center;
@@ -184,7 +183,7 @@ css for the homepage
 }
 
 #facebook:hover{
-  background-image: url("../../../images/facebook_dark.png");
+  background-image: url("../images/facebook_dark.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -192,7 +191,7 @@ css for the homepage
 }
 
 #twitter{
-  background-image: url("../../../images/twitter-logo.png");
+  background-image: url("../images/twitter-logo.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -200,7 +199,7 @@ css for the homepage
 }
 
 #twitter:hover{
-  background-image: url("../../../images/twitter_dark.png");
+  background-image: url("../images/twitter_dark.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -208,7 +207,7 @@ css for the homepage
 }
 
 #instagram{
-  background-image: url("../../../images/insta-logo.png");
+  background-image: url("../images/insta-logo.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -216,7 +215,7 @@ css for the homepage
 }
 
 #instagram:hover{
-  background-image: url("../../../images/instagram_dark.png");
+  background-image: url("../images/instagram_dark.png");
   width:70px;
   height:75px;
   margin-left:50px;
@@ -224,7 +223,7 @@ css for the homepage
 }
 
 #github{
-  background-image: url("../../../images/github-logo.png");
+  background-image: url("../images/github-logo.png");
   width:75px;
   height:75px;
   margin-left:50px;
@@ -232,7 +231,7 @@ css for the homepage
 }
 
 #github:hover{
-  background-image: url("../../../images/github_dark.png");
+  background-image: url("../images/github_dark.png");
   width:75px;
   height:75px;
   margin-left:50px;
