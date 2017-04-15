@@ -158,6 +158,8 @@ $(function() {
 		var self = this;
 
 		self.stores = ko.observableArray(stores);
+
+		debugger;
 	}
 
 	onLoad();
