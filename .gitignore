@@ -1,8 +1,2 @@
 node_modules
-config.json
-app/static/vendor/bootstrap
-app/static/vendor/font-awesome
-app/static/vendor/jquery
-app/static/vendor/jquery-ui
-app/static/vendor/knockout
 
